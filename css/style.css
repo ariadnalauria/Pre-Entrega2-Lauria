@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*inicio del hader*/
+body{
+    background: rgb(250,200,15);
+    background: linear-gradient(90deg, rgba(250,200,15,1) 0%, rgba(253,29,29,1) 63%, rgba(244,35,35,1) 99%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: red;
+}
+.div{
+    display: flex;
+    background-color: red;
+}
+nav{
+    width: 90%;
+}
+.navBar{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+.navBar li{
+    list-style: none;
+}
+.navBar li a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.navBar li a:hover{
+    color: yellow;
+}
+.portada img{
+    border-radius: 50%;
+    display: flex;
+    width: 50%;
+    box-shadow: -20px 10px 5px black;
+}
+.portada{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    background: rgb(250,200,15);
+    background: linear-gradient(90deg, rgba(250,200,15,1) 0%, rgba(253,29,29,1) 63%, rgba(244,35,35,1) 99%);
+}
+
+.videos img{
+    border-radius: 50%;
+    width: 60%;
+    box-shadow: 20px 10px 5px black;
+}
+.videos{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+.biblio img{
+    border-radius: 50%;
+    width: 60%;
+    box-shadow: 20px 10px 5px black;
+}
+.biblio{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+.redes img{
+    border-radius: 50%;
+    width: 65%;
+    height: 260px;
+    box-shadow: 20px 10px 5px black;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+.eventos img{
+    border-radius: 50%;
+    width: 60%;
+    box-shadow: 20px 10px 5px black;
+}
+.eventos{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+.titulo h1{
+    display: flex;
+    flex-flow: row wrap;
+    text-indent: 20px;
+    text-shadow: 5px 5px 10px white;
+    font-size: 30px;
+    font-weight: 100px;
+    background-color: red;
+    border-radius: 50px;
+}
+.info{
+    letter-spacing: 1px;
+}
+.info h2{
+    display: flex;
+    justify-content: center;
+    text-shadow: 5px 5px 10px rgb(255, 0, 0);
+    height: 70px;
+    flex-flow: row wrap;
+    margin: 20px;
+}
+.info p{
+    display: flex;
+    text-indent: 40px;
+    color: rgb(39, 38, 38);
+    height: 100px;
+    flex-flow: row wrap;
+    overflow: auto;
+    margin: 20px;
+}
+@media (min-width:768px){
+    .live{
+        display: grid;
+        margin: 15px;
+        height: 300px;
+        grid-template-columns: repeat(3, ifr);
+        grid-template-rows: repeat(3, ifr);
+        grid-template-areas: 
+        "live1 live2 live3"
+        "live1 live2 live3"
+        "live1 live2 live3"
+        ;
+        } 
+}
+.prox{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.descrip{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 70px;
+}
+.not{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 70px;
+}
+@media (min-width:768px){
+    .spo{
+        display: grid;
+        margin: 30px;
+        height: 100px;
+        grid-template-columns: repeat(2, ifr);
+        grid-template-rows: repeat(2, ifr);
+        grid-template-areas: 
+        "spo1 spo2"
+        "spo1 spo2"
+        ;
+        } 
+    }
+footer{
+    background-color: yellow;
+    text-align: center;
+    height: 50px;
+    margin-top: auto;
+    padding: 1em 0;
+}
+.ult{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    height: 30px;
+    text-align: center;
+}
